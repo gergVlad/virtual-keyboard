@@ -7,7 +7,7 @@ h1 {margin-bottom: 30px;}
 p {margin: 5px 0;}
 .container {display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; margin: 0 10px;}
 .keyboard_wrapp {max-width: 980px; width: 100%; background-color: #e7e7e7; position: relative; display: flex; flex-wrap: wrap;}
-.keys {width: 55px; height: 55px; background-color: #fff; display: flex; justify-content: center; align-items: center;  margin: 4px; transition: .2s; z-index: 5; cursor: pointer;}
+.keys {width: 55px; height: 55px; user-select: none; background-color: #fff; display: flex; justify-content: center; align-items: center;  margin: 4px; transition: .2s; z-index: 5; cursor: pointer;}
 .backspace_key {width: 152px;}
 .tab_key {width: 90px;}
 .slash_key {width: 90px;}
@@ -16,7 +16,8 @@ p {margin: 5px 0;}
 .shift_key {width: 117px;}
 .space_key {max-width: 467px; width: 100%;}
 .text {max-width: 1008px; width: 100%; height: 90px; margin-bottom: 30px; border: none; outline: none; font-size: 18px; background-color: #f7f7f7; padding-left: 10px; transition: .2s;}
-.keys.active, .keys:hover {background-color: #333; color: #fff;}
+.keys.active {background-color: #333; color: #fff; border-radius: 10px;}
+.keys:hover {background-color: #333; color: #fff;}
 .keys.remove {animation: keys_animation 0.5s forward;}
 
 @keyframes keys_animation {
